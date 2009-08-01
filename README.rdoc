@@ -1,0 +1,48 @@
+= DIAF, IE6
+
+A very simple Rails plugin to warn IE6 users, plainly and simply,
+that if they use IE6 to access your application, it won't be
+much fun for them.
+
+== Why?
+
+Because I am sick of ‘debugging’ code to make it work in IE6.
+I have worked on projects where IE6 compatibility has accounted
+for _over half_ of the total time spent on the project. That is
+time that could have been spent making whatever it is twice as
+awesome, or making a second thing of equal awesomeness.
+
+== How?
+
+This was pretty easy to accomplish: simply add a before_filter
+that checks the user agent string for IE6’s foul taint, and, if
+it is found, renders an admonition. A cookie is set so that the
+user only sees the message once (per year, I guess), and a link
+is provided at the bottom of the page to allow them to continue
+to whatever led them to the site, duly warned of the nightmarish
+visions that await them. It’s literally a dozen lines of code.
+
+Seriously, the hard part was writing the warning text without
+turning into one of those detestable “software should be free”
+fuckwits railing against Microsoft because they are turning a
+profit. Internet Explorer is free software too, and look how
+that turned out.
+
+== Caveats
+
+I don’t have ready access to a copy of IE6: all the testing
+so far has been done using Chris Pederick’s User Agent Switcher
+extension for Firefox. So it might not work for anybody except
+people using Firefox who for some reason wish they were using
+Internet Explorer 6. That is a thin sliver of the market. The
+only saving grace is that if this plugin doesn't work, your
+users will never know.
+
+== Installation
+
+    ./script/plugin install git://github.com/fauxparse/diaf_ie6.git
+    
+== Credits
+
+(c) 2009 Matt Powell (fauxparse@gmail.com)
+
