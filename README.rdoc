@@ -8,7 +8,7 @@ much fun for them.
 
 Because I am sick of ‘debugging’ code to make it work in IE6.
 I have worked on projects where IE6 compatibility has accounted
-for _over half_ of the total time spent on the project. That is
+for <em>over half</em> of the total time spent on the project. That is
 time that could have been spent making whatever it is twice as
 awesome, or making a second thing of equal awesomeness.
 
