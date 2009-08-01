@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Internet Explorer 6? Really?</title>
+	<style type="text/css" media="screen">
+	  body {
+	    background: #ffc;
+	    color: #333;
+	    font: 14px Helvetica, Arial, sans-serif;
+	    margin: 0px;
+	    padding: 0px;
+	  }
+	
+	  blockquote {
+	    text-align: center;
+	    font: 24px "Comic Sans MS", sans-serif;
+	    background: white;
+	    border-bottom: 1px solid #999;
+	    margin: 0px;
+	  }
+	  
+	  blockquote p {
+	    width: 20em;
+	    margin: 0px auto;
+	    padding: 2em 0px 2em;
+	    text-align: left;
+	  }
+	  
+	  #explanation {
+	    padding: 1em 4em 2em;
+	  }
+	  
+	  #explanation a.continue {
+	    font-weight: bold;
+	    color: blue;
+	    font-size: 150%;
+	  }
+	</style>
+</head>
+
+<body>
+  <blockquote>
+    <p>There is an old browser, quite dire<br />
+    Which we fervently hope will retire<br />
+    &nbsp;&nbsp;But instead of my rage<br />
+    &nbsp;&nbsp;I’ll just serve you this page<br />
+    IE6, please go <strong>die in a fire.</strong></p>
+  </blockquote>
+  <div id="explanation">
+    <h2>Why am I seeing this page?</h2>
+    <p>Internet Explorer 6 is an inferior browser. I wanted to warn you that, if you use it to access this site, <strong>your experience will therefore be inferior</strong> to that of someone using a more capable, modern browser.</p>
+    <p>I don’t want to get into the philosophical, quasi-religious arguments about why particular browsers are better, or why Microsoft are evil, or whatever: I don’t see anything to be gained from that. But nor do I see any reason why I should expend a substantial portion of the resources I could be using to make this site better and more worthy of your attention, instead making it conform to the myriad idiosyncrasies of a browser that is <strong>out of date by two release cycles</strong>. I get enough of that at work, and that is why my employer has to pay me to turn up.</p>
+    <p>I realise, too, that some people don’t get to choose what browser they use: maybe you’re locked into using IE6 by some kind of draconian workplace regulation. To which I say: sucks to be you, but you always have a choice. You could choose to complain, or choose to put up with a slightly uglier and more fickle internet, or choose to quit your job: or you could simply choose not to look at my website. I probably wouldn’t even be particularly sad.</p>
+    <p><strong>If you choose to continue</strong>, you shouldn’t see this page again (as long as you have cookies enabled). But at least I’ve warned you, and maybe there will always be that little voice inside you. <strong>You always have a choice.</strong></p>
+    <p><%= link_to "Continue &raquo;", @next_page, :class => :continue %></p>
+  </div>
+</body>
+</html>
